@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import { useEffect } from 'react';
 import Lenis from 'lenis';
 import { CustomCursor } from './components/CustomCursor';
 import { Navbar } from './components/Navbar';
