@@ -47,7 +47,63 @@ export const Projects = () => {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: "-100px" }}
           transition={{ duration: 0.6, delay: 0.1 }}
-          className="bg-surface border border-border rounded-[10px] overflow-hideen flex items-center justify-center min-h-[320px] transition-all duration-300 hover:-translate-y-[6px] hover:border-[rgba(0,210,180,0.25)]"
+          className="bg-surface border border-border rounded-[10px] overflow-hidden transition-all duration-300 hover:-translate-y-[6px] hover:border-[rgba(0,210,180,0.25)] group"
+        >
+          <div className="p-8 bg-gradient-to-br from-[#0b1622] to-[#0f1e2e] relative min-h-[130px] flex flex-col justify-end overflow-hidden before:content-['02'] before:absolute before:right-6 before:top-4 before:text-[5rem] before:font-extrabold before:text-[rgba(0,210,180,0.06)] before:font-mono before:leading-none">
+            <div className="text-[1.4rem] font-extrabold tracking-[-0.02em]">NORBIZ LOTTO</div>
+            <div className="font-mono text-[0.72rem] text-accent tracking-[0.1em] uppercase mt-1">Web Application</div>
+          </div>
+          <div className="p-7">
+            <p className="text-[0.92rem] leading-[1.75] text-[#e8f4f2a6] mb-6">
+              A modern web application. Features responsive design, interactive UI components, and a seamless user experience.
+            </p>
+            <div className="flex flex-wrap gap-[0.4rem] mb-6">
+              {['React.js', 'Vite', 'Tailwind CSS'].map(tech => (
+                <span key={tech} className="font-mono text-[0.68rem] py-[0.25rem] px-[0.6rem] rounded-[2px] bg-[rgba(0,170,255,0.08)] border border-[rgba(0,170,255,0.15)] text-accent2 cursor-none hover:border-[rgba(0,170,255,0.4)] transition-colors">
+                  {tech}
+                </span>
+              ))}
+            </div>
+            <div className="flex gap-4">
+              <a href="https://clonehome-seven.vercel.app/" target="_blank" rel="noreferrer" className="font-mono text-[0.75rem] text-muted decoration-none flex items-center gap-[0.4rem] transition-colors duration-200 hover:text-accent cursor-none">↗ Live Demo</a>
+            </div>
+          </div>
+        </motion.div>
+
+        <motion.div 
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, margin: "-100px" }}
+          transition={{ duration: 0.6, delay: 0.2 }}
+          className="bg-surface border border-border rounded-[10px] overflow-hidden transition-all duration-300 hover:-translate-y-[6px] hover:border-[rgba(0,210,180,0.25)] group"
+        >
+          <div className="p-8 bg-gradient-to-br from-[#0b1622] to-[#0f1e2e] relative min-h-[130px] flex flex-col justify-end overflow-hidden before:content-['03'] before:absolute before:right-6 before:top-4 before:text-[5rem] before:font-extrabold before:text-[rgba(0,210,180,0.06)] before:font-mono before:leading-none">
+            <div className="text-[1.4rem] font-extrabold tracking-[-0.02em]">DEVSKILL CONNECT</div>
+            <div className="font-mono text-[0.72rem] text-accent tracking-[0.1em] uppercase mt-1">Full-Stack Application</div>
+          </div>
+          <div className="p-7">
+            <p className="text-[0.92rem] leading-[1.75] text-[#e8f4f2a6] mb-6">
+              A developer networking platform where users can showcase abilities and connect based on shared skills. Features secure JWT/OAuth authentication, rich user profiles, and an efficient skill discovery engine.
+            </p>
+            <div className="flex flex-wrap gap-[0.4rem] mb-6">
+              {['Next.js', 'TypeScript', 'Zustand', 'TanStack Query', 'Node.js', 'Express', 'MongoDB', 'Cloudinary'].map(tech => (
+                <span key={tech} className="font-mono text-[0.68rem] py-[0.25rem] px-[0.6rem] rounded-[2px] bg-[rgba(0,170,255,0.08)] border border-[rgba(0,170,255,0.15)] text-accent2 cursor-none hover:border-[rgba(0,170,255,0.4)] transition-colors">
+                  {tech}
+                </span>
+              ))}
+            </div>
+            <div className="flex gap-4">
+              <span className="font-mono text-[0.75rem] text-muted flex items-center gap-[0.4rem]">development</span>
+            </div>
+          </div>
+        </motion.div>
+
+        <motion.div 
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, margin: "-100px" }}
+          transition={{ duration: 0.6, delay: 0.3 }}
+          className="bg-surface border border-border rounded-[10px] overflow-hidden flex items-center justify-center min-h-[320px] transition-all duration-300 hover:-translate-y-[6px] hover:border-[rgba(0,210,180,0.25)]"
         >
           <div className="text-center p-8">
             <div className="text-[2.5rem] mb-4 opacity-30">+</div>
