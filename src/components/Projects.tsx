@@ -86,14 +86,21 @@ export const Projects = () => {
               A developer networking platform where users can showcase abilities and connect based on shared skills. Features secure JWT/OAuth authentication, rich user profiles, and an efficient skill discovery engine.
             </p>
             <div className="flex flex-wrap gap-[0.4rem] mb-6">
-              {['Next.js', 'TypeScript', 'Zustand', 'TanStack Query', 'Node.js', 'Express', 'MongoDB', 'Cloudinary'].map(tech => (
+              {['Next.js', 'TypeScript', 'Zustand', 'TanStack Query', 'Node.js', 'Express', 'MongoDB', 'Cloudinary', 'Socket.IO', 'WebRTC', 'AWS EC2', 'Docker'].map(tech => (
                 <span key={tech} className="font-mono text-[0.68rem] py-[0.25rem] px-[0.6rem] rounded-[2px] bg-[rgba(0,170,255,0.08)] border border-[rgba(0,170,255,0.15)] text-accent2 cursor-none hover:border-[rgba(0,170,255,0.4)] transition-colors">
                   {tech}
                 </span>
               ))}
             </div>
             <div className="flex gap-4">
-              <span className="font-mono text-[0.75rem] text-muted flex items-center gap-[0.4rem]">development</span>
+              <a
+                href="https://dev-connect.tech/login"
+                target="_blank"
+                rel="noreferrer"
+                className="font-mono text-[0.75rem] text-muted decoration-none flex items-center gap-[0.4rem] transition-colors duration-200 hover:text-accent cursor-none"
+              >
+                Live Project
+              </a>
             </div>
           </div>
         </motion.div>
